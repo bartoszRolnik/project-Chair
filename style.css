@@ -174,6 +174,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 /*@media only screen and (max-width: 600px) {*/
@@ -188,11 +189,11 @@ header{
 }
 .logo{
     text-transform: uppercase;
-    width: 60%;
+    width: 100%;
     color: #FFF;
     float: left;
+    padding-left: 32px;
     line-height: 45px;
-    padding-left: 35px;
     padding-top: 1px;
     letter-spacing: 0.1em;
     font-weight:bold;
@@ -202,27 +203,48 @@ header{
     font-family: 'ralewaybold';
 }
 .menu{
-    width: 40%;
-    color: #FFF;
+    width: 357px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 2;
 }
-.list{
-    float: right;
-    line-height: 45px;
-    letter-spacing: 0.1em;
-    font-family: 'ralewaybold';
-    padding-right: 20px;
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.nav-list__item {
+.menu ul li{
     text-transform: uppercase;
-    display: inline-block;
-    margin:0 20px;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
 }
-.nav-list__item:nth-child(2){
-    margin-right: 12px;
+
+.menu ul li a {
+    width: 119px;
+    text-decoration: none;
+    display: block;
 }
-.nav-list__item:first-child{
-    margin-right: 30px;
+ul li a:hover {
+   background-color: #26C6B0;
 }
+.menu ul li ul li{
+    text-transform: none;
+    font-size: 10px;
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+
 .main_section{
     background-image: linear-gradient(to top, #d7d6dc, #e1e0e5, #ebeaed, #f5f5f6, #ffffff);
     width: 100%;
@@ -249,6 +271,7 @@ header{
 .main_information{
     width: 55%;
     height: 550px;
+    z-index: 1;
     position: relative;
 }
 .main_information:after{
@@ -260,30 +283,34 @@ header{
     right: 44px;
 }
 h1{
+    position: absolute;
+    top: 145px;
+    right: 232px;
     text-transform: uppercase;
-    padding-top: 144px;
-    padding-left: 52px;
     font-size: 42px;
     font-weight: 700;
 }
 .main_text{
+    position: absolute;
+    bottom: 231px;
+    right: 188px;
     font-size: 15px;
     text-align: center;
-    padding-right: 189px;
-    padding-top: 30px;
     letter-spacing: 1px;
     font-weight: bold;
     line-height: 1.6em;
-    padding-bottom: 31px;
+    width: 467px;
 }
 .see_more{
+    position: absolute;
+    bottom: 146px;
+    right: 275px;
     text-transform: uppercase;
     background-color: #26C6B0;
     color: #FFF;
     font-size: 26px;
-    margin-left: 106px;
     padding-top: 10px;
-    padding: 12px 40px;
+    padding: 12px 33px 12px 48px;
     border-radius: 7px;
     border: #26C6B0;;
 }
