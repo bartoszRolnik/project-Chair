@@ -202,13 +202,50 @@ header{
     color: #26C6B0;
     font-family: 'ralewaybold';
 }
+.triangle_firma {
+    display: none;
+    position: absolute;
+    top: 39px;
+    right: 287px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+}
+.triangle_galeria {
+    display: none;
+    position: absolute;
+    top: 39px;
+    right: 190px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+}
+.triangle_kontakt {
+    display: none;
+    position: absolute;
+    top: 39px;
+    right: 100px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+}
+
 .menu{
     width: 357px;
     height: 200px;
     position: absolute;
-    top: 0;
+    top: 4px;
     right: 10px;
     z-index: 2;
+}
+.menu ul li ul li:first-child {
+    margin-top: 13px;
 }
 ul{
     margin: 0;
@@ -233,15 +270,25 @@ ul{
     text-decoration: none;
     display: block;
 }
-ul li a:hover {
-   background-color: #26C6B0;
-}
+
 .menu ul li ul li{
     text-transform: none;
     font-size: 10px;
     display: none;
 }
+.menu ul li ul li:hover{
+    background-color: #26C6B0;
+}
 ul li:hover ul li{
+    display: block;
+}
+ul li:hover .triangle_firma{
+    display: block;
+}
+ul li:hover .triangle_galeria{
+    display: block;
+}
+ul li:hover .triangle_kontakt{
     display: block;
 }
 
