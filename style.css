@@ -202,56 +202,16 @@ header{
     color: #26C6B0;
     font-family: 'ralewaybold';
 }
-.triangle_firma {
-    display: none;
-    position: absolute;
-    top: 39px;
-    right: 287px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid black;
-}
-.triangle_galeria {
-    display: none;
-    position: absolute;
-    top: 39px;
-    right: 190px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid black;
-}
-.triangle_kontakt {
-    display: none;
-    position: absolute;
-    top: 39px;
-    right: 100px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid black;
-}
 
 .menu{
-    width: 357px;
+    width: 350px;
     height: 200px;
     position: absolute;
     top: 4px;
     right: 10px;
     z-index: 2;
 }
-.menu ul li ul li:first-child {
-    margin-top: 13px;
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 .menu ul li{
     text-transform: uppercase;
     float: left;
@@ -263,34 +223,33 @@ ul{
     text-align: center;
     font-size: 14px;
     color: #FFFFFF;
+    position: relative;
 }
-
-.menu ul li a {
-    width: 119px;
-    text-decoration: none;
-    display: block;
-}
-
-.menu ul li ul li{
-    text-transform: none;
-    font-size: 10px;
+.menu ul li ul{
     display: none;
 }
+
+.menu ul li ul:before {
+    content: "\25b2";
+    color: black;
+    width: 100%;
+    line-height: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.menu ul li ul li a{
+    font-size: 12px;
+    text-align: center;
+}
+
 .menu ul li ul li:hover{
     background-color: #26C6B0;
 }
-ul li:hover ul li{
+ul li:hover >ul{
     display: block;
 }
-ul li:hover .triangle_firma{
-    display: block;
-}
-ul li:hover .triangle_galeria{
-    display: block;
-}
-ul li:hover .triangle_kontakt{
-    display: block;
-}
+
 
 .main_section{
     background-image: linear-gradient(to top, #d7d6dc, #e1e0e5, #ebeaed, #f5f5f6, #ffffff);
@@ -520,6 +479,85 @@ h1{
     background-color: #FFFFFF;
     border: 2px solid lightgray;
 }
+/*------------------PLAN BOX HOVER--------------------------*/
+.plan_box_2:hover{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_2:hover>.plan_button{
+    background-color: #FFFFFF;
+    color: #26C6B0;
+}
+.plan_box_2:hover>.plan_spot{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_2:hover>.plan_spot2{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.plan_box_2:hover>.plan_title{
+    color: #FFF;}
+.plan_box_2:hover>.plan_spot_price {
+    color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_2:hover>.plan_currency{
+    color: #26C6B0;
+}
+.plan_box_1:hover{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_1:hover>.plan_button{
+    background-color: #FFFFFF;
+    color: #26C6B0;
+}
+.plan_box_1:hover>.plan_spot{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_1:hover>.plan_spot2{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.plan_box_1:hover>.plan_title{
+    color: #FFF;
+}
+.plan_box_1:hover>.plan_spot_price {
+    color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_1:hover>.plan_currency{
+    color: #26C6B0;
+}
+.plan_box_3:hover{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_3:hover>.plan_button{
+    background-color: #FFFFFF;
+    color: #26C6B0;
+}
+.plan_box_3:hover>.plan_spot{
+    background-color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_3:hover>.plan_spot2{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.plan_box_3:hover>.plan_title{
+    color: #FFF;
+}
+.plan_box_3:hover>.plan_spot_price {
+    color: #26C6B0;
+    border: 2px solid #26C6B0;
+}
+.plan_box_3:hover>.plan_currency{
+    color: #26C6B0;
+}
+
 .plan_box_3{
     position: absolute;
     top: 69px;
